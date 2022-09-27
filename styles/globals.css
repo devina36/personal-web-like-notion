@@ -4,14 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
-body{
-  @apply box-border m-0 p-0 overflow-x-hidden bg-dark;
+body {
+  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white;
 }
 
-.contain{
-  @apply container mx-auto w-full px-16
+.contain {
+  @apply container mx-auto w-full px-16;
 }
 
 .wrap {
   @apply w-full flex flex-col justify-center items-center;
+}
+
+.text-theme {
+  @apply text-white dark:text-dark;
+}
+
+.border-theme {
+  @apply border-white dark:border-dark;
 }
