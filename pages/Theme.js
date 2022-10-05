@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { BsBrightnessHigh, BsMoonStars } from 'react-icons/bs';
 
 export default function Theme() {
   const [dark, setDark] = useState(false);
@@ -12,9 +11,9 @@ export default function Theme() {
   return (
     <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       {theme === 'light' ? (
-        <FontAwesomeIcon icon={faMoon} className="text-blue-500 w-5 h-5" />
+        <BsMoonStars className="text-white focus:outline-none w-5 h-5 transition-all ease-in-out duration-500 hover:-rotate-90" />
       ) : (
-        <FontAwesomeIcon icon={faSun} className="text-blue-400 w-5 h-5" />
+        <BsBrightnessHigh className=" text-dark focus:outline-none w-5 h-5 transition-all ease-in-out duration-500 hover:rotate-90" />
       )}
     </button>
   );

@@ -4,8 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
+@layer base {
+  html {
+    @apply scroll-smooth dark:scroll-smooth;
+  }
+}
+
 body {
-  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white;
+  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white transition-all ease-in-out duration-500;
 }
 
 .contain {
@@ -22,4 +28,16 @@ body {
 
 .border-theme {
   @apply border-white dark:border-dark;
+}
+
+.title-section {
+  @apply before:block before:-z-10 before:absolute before:-inset-x-1 before:bottom-1 before:-skew-y-3 before:h-2 before:bg-accent relative inline-block;
+}
+
+.sosmed {
+  @apply bg-white dark:bg-dark rounded-full hover:bg-bubble-pink dark:hover:bg-bubble-pink mb-2 ease-out duration-300 transition-all;
+}
+
+.box {
+  @apply shadow-md rounded-lg w-36 h-16 bg-dark dark:bg-white flex items-center px-3 hover:scale-110 ease-in-out duration-500 transition-all;
 }
