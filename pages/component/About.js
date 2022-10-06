@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function () {
   return (
-    <section className="contain mb-20 mt-10">
-      <div className=" px-28">
-        <div className="flex flex-wrap items-center">
-          <div className="w-1/2">
+    <section className="contain mb-28 mt-10">
+      <div className="px-0 sm:px-12 lg:px-28">
+        <div className="flex flex-col lg:flex-row flex-wrap tems-center">
+          <div className=" w-full lg:w-1/2 px-5 sm:px-0">
             <span className="title-section mb-10">
               <h2 className="text-theme font-inter font-bold text-2xl">About</h2>
             </span>
@@ -15,7 +15,11 @@ export default function () {
               collaborate as part of a productive team.
             </p>
           </div>
-          <img src="/assets/cuate.svg" className=" w-1/2 aspect-auto" alt="https://storyset.com/technology" />
+          <img
+            src="/assets/cuate.svg"
+            className="w-full max-w-xl mx-auto px-1 sm:px-0 lg:w-1/2 lg:aspect-auto"
+            alt="https://storyset.com/technology"
+          />
         </div>
       </div>
     </section>

@@ -11,11 +11,11 @@
 }
 
 body {
-  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white transition-all ease-in-out duration-500;
+  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white transition-all ease-in-out duration-500 selection:bg-accent;
 }
 
 .contain {
-  @apply container mx-auto w-full px-16;
+  @apply container mx-auto w-full px-0 lg:px-16;
 }
 
 .wrap {
@@ -35,9 +35,37 @@ body {
 }
 
 .sosmed {
-  @apply bg-white dark:bg-dark rounded-full hover:bg-bubble-pink dark:hover:bg-bubble-pink mb-2 ease-out duration-300 transition-all;
+  @apply bg-white dark:bg-dark rounded-full hover:bg-bubble-pink dark:hover:bg-bubble-pink mb-2 ease-out duration-300 transition-all w-fit;
 }
 
 .box {
   @apply shadow-md rounded-lg w-36 h-16 bg-dark dark:bg-white flex items-center px-3 hover:scale-110 ease-in-out duration-500 transition-all;
+}
+
+.tag {
+  @apply px-1 text-sm text-theme;
+}
+
+.tag-blue {
+  @apply bg-txt-blue dark:bg-tag-blue;
+}
+
+.tag-purple {
+  @apply bg-txt-purple dark:bg-tag-purple;
+}
+
+.tag-red {
+  @apply bg-txt-red dark:bg-tag-red;
+}
+
+.tag-yellow {
+  @apply bg-txt-yellow dark:bg-tag-yellow;
+}
+
+.tag-gray {
+  @apply bg-tag-gray;
+}
+
+.tag-green {
+  @apply dark:bg-tag-green bg-txt-green;
 }

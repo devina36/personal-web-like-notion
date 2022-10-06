@@ -11,9 +11,16 @@ export default function Theme() {
   return (
     <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       {theme === 'light' ? (
-        <BsMoonStars className="text-white focus:outline-none w-5 h-5 transition-all ease-in-out duration-500 hover:-rotate-90" />
+        <BsMoonStars
+          className="text-white focus:outline-none w-5 h-5 transition-all 
+        ease-in-out duration-500 hover:-rotate-90 hover:text-accent"
+        />
       ) : (
-        <BsBrightnessHigh className=" text-dark focus:outline-none w-5 h-5 transition-all ease-in-out duration-500 hover:rotate-90" />
+        <BsBrightnessHigh
+          size={20}
+          className=" text-dark focus:outline-none transition-all 
+        ease-in-out duration-500 hover:rotate-90 hover:text-accent"
+        />
       )}
     </button>
   );

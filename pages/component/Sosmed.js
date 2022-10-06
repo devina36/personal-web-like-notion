@@ -4,22 +4,24 @@ import { GrInstagram, GrLinkedinOption, GrGithub } from 'react-icons/gr';
 
 export default function Sosmed() {
   return (
-    <label className="fixed inset-y-1/2 right-[10%]">
-      <Link href="https://github.com/devina36" passHref>
-        <div className="p-2 sosmed">
-          <GrGithub className="w-5 h-5 cursor-pointer text-dark dark:text-white" />
-        </div>
-      </Link>
-      <Link href="https://www.linkedin.com/in/devina-amalia-arindi/" passHref>
-        <div className="p-2 sosmed">
-          <GrLinkedinOption className="w-5 h-5 cursor-pointer text-dark dark:text-white" />
-        </div>
-      </Link>
-      <Link href="https://www.instagram.com/dvn.humanbeing/" passHref>
-        <div className="p-2 sosmed">
-          <GrInstagram className="w-5 h-5 cursor-pointer text-dark dark:text-white" />
-        </div>
-      </Link>
+    <label className="fixed invisible lg:visible w-full inset-y-1/2 -z-10">
+      <div className="contain">
+        <a href="https://github.com/devina36" target="_blank" rel="noreferrer">
+          <div className="p-2 sosmed cursor-pointer ml-auto mr-4">
+            <GrGithub size={25} className=" text-dark dark:text-white" />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/devina-amalia-arindi/" target="_blank" rel="noreferrer">
+          <div className="p-2 sosmed cursor-pointer ml-auto mr-4">
+            <GrLinkedinOption size={25} className=" text-dark dark:text-white" />
+          </div>
+        </a>
+        <a href="https://www.instagram.com/dvn.humanbeing/" target="_blank" rel="noreferrer">
+          <div className="p-2 sosmed cursor-pointer ml-auto mr-4">
+            <GrInstagram size={25} className=" text-dark dark:text-white" />
+          </div>
+        </a>
+      </div>
     </label>
   );
 }
