@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProjectItem({ title, img, url }) {
   return (
@@ -9,7 +10,16 @@ export default function ProjectItem({ title, img, url }) {
         <div className=" w-3 h-3 rounded-full bg-tag-yellow  mr-1"></div>
         <div className=" w-3 h-3 rounded-full bg-tag-blue"></div>
       </div>
-      <img src={img} className="rounded-b-3xl w-full aspect-video object-cover" alt="personal-web" />
+      <div className="aspect-video w-full">
+        <Image
+          src={img}
+          className="rounded-b-3xl object-cover"
+          width={500}
+          height={300}
+          layout="responsive"
+          alt={'personal-web'}
+        />
+      </div>
       <div
         className="absolute w-full h-full bg-gradient-to-t from-zinc-900 
         rounded-3xl top-0 opacity-0 hover:opacity-100 transition-all ease-in-out duration-500"

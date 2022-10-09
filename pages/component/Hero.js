@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-14">
           <div className=" p-1 rounded-full bg-transparent border-2 border-white dark:border-dark">
             <div className=" w-28 h-28 border:white border-2 rounded-full dark:border-dark">
-              <Image src="/assets/1.jpg" className=" rounded-full w-full" width="200" height="200" />
+              <Image src="/assets/1.jpg" className=" rounded-full w-full" width="200" height="200" alt={'me'} />
             </div>
           </div>
         </div>

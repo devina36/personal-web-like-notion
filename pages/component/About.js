@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -15,11 +16,9 @@ export default function About() {
               collaborate as part of a productive team.
             </p>
           </div>
-          <img
-            src="/assets/cuate.svg"
-            className="w-full max-w-xl mx-auto px-1 sm:px-0 lg:w-1/2 lg:aspect-auto"
-            alt="https://storyset.com/technology"
-          />
+          <div className="w-full max-w-xl mx-auto px-1 sm:px-0 lg:w-1/2 lg:aspect-auto">
+            <Image src={'/assets/cuate.svg'} width={750} height={500} layout="responsive" alt="/" />
+          </div>
         </div>
       </div>
     </section>

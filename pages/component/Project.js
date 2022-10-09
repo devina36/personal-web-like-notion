@@ -25,7 +25,7 @@ export default function Project() {
           />
           <ProjectItem title="Simple Blog with Authorization" img={'/assets/blog_.png'} url="/blog" key={'project4'} />
           <ProjectItem title="Simple Notes Reactjs" img={'/assets/my-notess.png'} url="/notes" key={'project5'} />
-          <ProjectItem title="Simple Weather App" img={'assets/weather-app.png'} url="/weather" key={'project6'} />
+          <ProjectItem title="Simple Weather App" img={'/assets/weather-app.png'} url="/weather" key={'project6'} />
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { BsFillCaretRightFill } from 'react-icons/bs';
 
@@ -7,7 +8,9 @@ export default function Experience() {
       <div className="px-5 sm:px-12 lg:px-28">
         <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="w-full lg:w-2/6">
-            <img src="/assets/cleanup-cuate.svg" className=" max-w-md lg:w-full mx-auto h-auto" alt="experience" />
+            <div className=" max-w-md lg:w-full mx-auto h-auto">
+              <Image src="/assets/cleanup-cuate.svg" layout="responsive" width={500} height={500} alt="experience" />
+            </div>
           </div>
           <div className="w-full order-first lg:order-none lg:w-4/6 pl-0 lg:pl-14">
             <span className="title-section mb-10">
