@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Theme from '../Theme';
 
 export default function Header() {

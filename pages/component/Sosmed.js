@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import { GrInstagram, GrLinkedinOption, GrGithub } from 'react-icons/gr';
 

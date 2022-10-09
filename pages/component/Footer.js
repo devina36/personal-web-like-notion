@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
-export default function Footer({ dis }) {
+export default function Footer() {
   return (
-    <footer className={dis}>
+    <footer className="w-full">
       <div className="border-t-2 border-theme">
         <div className="contain my-4 flex flex-col sm:flex-row justify-between items-center">
           <h4 className="font-inter text-theme">Copyright {new Date().getFullYear()} Devina Amalia</h4>

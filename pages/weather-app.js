@@ -8,7 +8,7 @@ export default function () {
   return (
     <>
       <Header />
-      <ImgProject urlImg={'/assets/weather-app.png'} icon={'🌤'} />
+      <ImgProject urlImg={'/assets/weather-app.png'} icon={'🌤'} key={'weather'} />
       <section className="contain my-20">
         <div className="w-full px-4 sm:px-28 ">
           <div className="flex flex-col sm:flex-row justify-between">

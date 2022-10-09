@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsArrowLeft, BsGithub, BsGlobe } from 'react-icons/bs';
+import { BsArrowLeft, BsGithub } from 'react-icons/bs';
 import Header from './component/Header';
 import ImgProject from './component/ImgProject';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ export default function () {
   return (
     <>
       <Header />
-      <ImgProject urlImg={'/assets/blog_.png'} icon={'👾'} />
+      <ImgProject urlImg={'/assets/blog_.png'} icon={'👾'} key={'blog'} />
       <section className="contain my-20">
         <div className="w-full px-4 sm:px-28 ">
           <div className="flex flex-col sm:flex-row justify-between">

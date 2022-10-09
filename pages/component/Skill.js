@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { DiCss3, DiJavascript1, DiReact, DiMysql, DiCodeigniter } from 'react-icons/di';
-import { SiTailwindcss, SiBootstrap, SiCodeigniter } from 'react-icons/si';
+import { SiTailwindcss, SiBootstrap } from 'react-icons/si';
 
 export default function Skill() {
   return (
