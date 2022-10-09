@@ -17,7 +17,7 @@ export default function Home() {
       <Experience />
       <Skill />
       <Project />
-      <Footer />
+      <Footer dis={'w-full'} />
     </>
   );
 }

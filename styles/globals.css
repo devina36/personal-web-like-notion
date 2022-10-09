@@ -6,12 +6,12 @@
 
 @layer base {
   html {
-    @apply scroll-smooth dark:scroll-smooth;
+    @apply scroll-smooth;
   }
 }
 
 body {
-  @apply box-border m-0 p-0 overflow-x-hidden bg-dark dark:bg-white transition-all ease-in-out duration-500 selection:bg-accent;
+  @apply box-border relative m-0 p-0 overflow-x-hidden bg-dark dark:bg-white transition-all ease-in-out duration-500 selection:bg-accent min-h-screen;
 }
 
 .contain {
@@ -68,4 +68,8 @@ body {
 
 .tag-green {
   @apply dark:bg-tag-green bg-txt-green;
+}
+
+.btn-repo {
+  @apply flex items-center bg-accent px-3 py-1 border-2 border-transparent rounded-lg  text-white hover:border-accent hover:bg-transparent hover:text-accent;
 }

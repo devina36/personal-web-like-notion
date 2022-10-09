@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="contain">
       <div
         className="w-full shadow relative bg-gradient-to-r from-bubble-blue 
-      via-bubble-pink to-accent h-40 rounded-none lg:rounded-3xl transition-all ease-in-out"
+      via-bubble-pink to-accent h-40 rounded-none md:rounded-3xl transition-all ease-in-out"
       >
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-14">
           <div className=" p-1 rounded-full bg-transparent border-2 border-white dark:border-dark">

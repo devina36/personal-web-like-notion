@@ -10,12 +10,22 @@ export default function Project() {
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-12 mt-10">
-          <ProjectItem title="Personal Webite" img={'/assets/portoweb.png'} href="/porto-web" />
-          <ProjectItem title="Calculator App with Multiple Theme" img={'/assets/design2.png'} href="/calcultor-app" />
-          <ProjectItem title="Fylo Dark Landing Page" img={'/assets/desktop-preview.jpg'} href="/fylo-dark" />
-          <ProjectItem title="Simple Blog with Authorization" img={'/assets/blog_.png'} href="/blog" />
-          <ProjectItem title="Simple Notes Reactjs" img={'/assets/my-notess.png'} href="/notes" />
-          <ProjectItem title="Simple Weather App" img={'assets/weather-app.png'} href="/weather" />
+          <ProjectItem title="Personal Webite" img={'/assets/portoweb.png'} url="/porto-web" key={'project'} />
+          <ProjectItem
+            title="Calculator App with Multiple Theme"
+            img={'/assets/design2.png'}
+            url="/calculator-app"
+            key={'project2'}
+          />
+          <ProjectItem
+            title="Fylo Dark Landing Page"
+            img={'/assets/desktop-preview.jpg'}
+            url="/fylo-dark"
+            key={'project3'}
+          />
+          <ProjectItem title="Simple Blog with Authorization" img={'/assets/blog_.png'} url="/blog" key={'project4'} />
+          <ProjectItem title="Simple Notes Reactjs" img={'/assets/my-notess.png'} url="/notes" key={'project5'} />
+          <ProjectItem title="Simple Weather App" img={'assets/weather-app.png'} url="/weather-app" key={'project6'} />
         </div>
       </div>
     </section>

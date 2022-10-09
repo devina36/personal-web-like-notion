@@ -1,7 +1,7 @@
 import React from 'react';
-// import Link from 'next/link';
+import Link from 'next/link';
 
-export default function ProjectItem({ title, img, href }) {
+export default function ProjectItem({ title, img, url }) {
   return (
     <div className="w-full relative shadow rounded-3xl">
       <div className=" h-8 w-full bg-orange-50 flex items-center px-4 rounded-t-3xl">
@@ -16,13 +16,14 @@ export default function ProjectItem({ title, img, href }) {
       >
         <div className="px-3 w-full h-full grid place-content-center text-center">
           <h3 className=" font-inter text-lg font-bold text-white">{title}</h3>
-          <button
-            href={href}
-            className=" bg-[#F5EEFC] text-txt-orange font-bold block w-28 py-1 mx-auto rounded-lg mt-2 border-2
-            hover:border-2 hover:border-[#F5EEFC] hover:bg-transparent hover:text-[#F5EEFC] transition-colors ease-in-out duration-300"
-          >
-            Show more
-          </button>
+          <Link href={url} scroll={true} passHref>
+            <a
+              className='className=" bg-[#F5EEFC] text-txt-orange font-bold block w-28 py-1 mx-auto rounded-lg mt-2 border-2
+            hover:border-2 hover:border-[#F5EEFC] hover:bg-transparent hover:text-[#F5EEFC] transition-colors ease-in-out duration-300"'
+            >
+              Show more
+            </a>
+          </Link>
         </div>
       </div>
     </div>
