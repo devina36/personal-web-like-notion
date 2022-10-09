@@ -4,28 +4,25 @@ import Header from './component/Header';
 import ImgProject from './component/ImgProject';
 import Link from 'next/link';
 
-export default function () {
+const porto = () => {
   return (
     <>
       <Header />
-      <ImgProject urlImg={'/assets/design2.png'} icon={'🧮'} key={'calculator'} />
+      <ImgProject urlImg={'/assets/portoweb.png'} icon={'👩🏻‍💼'} key={'porto'} />
       <section className="contain my-20">
         <div className="w-full px-4 sm:px-28 ">
           <div className="flex flex-col sm:flex-row justify-between">
             <div className=" sm:w-4/5">
-              <h2 className="text-theme font-inter font-bold text-3xl mb-2">Calculator app with multiple theme</h2>
-              <p className="text-theme sm:w-4/5">
-                This is another challenge from frontend mentor. I build this calulator app with multiple theme using
-                jquery and tailwindcss
-              </p>
+              <h2 className="text-theme font-inter font-bold text-3xl mb-2">Personal website</h2>
+              <p className="text-theme sm:w-4/5">This is personal website using reactjs and reactdom</p>
               <div className=" flex mt-7">
-                <a className="btn-repo mr-3" href="https://github.com/devina36/Calculator-App-with-Multiple-Theme">
+                <a className="btn-repo mr-3" href="https://github.com/devina36/Portofolio_React">
                   repo
                   <span className="ml-1">
                     <BsGithub />
                   </span>
                 </a>
-                <a className="btn-repo" href="https://devina36.github.io/Calculator-App-with-Multiple-Theme/">
+                <a className="btn-repo" href="https://devinaportofolio.netlify.app/">
                   demo
                   <span className="ml-1">
                     <BsGlobe />
@@ -38,7 +35,7 @@ export default function () {
               <span className="tag tag-blue mr-1 inline-block">html</span>
               <span className="tag tag-yellow mr-1 inline-block">css</span>
               <span className="tag tag-red mr-1 inline-block">javascript</span>
-              <span className="tag tag-green mr-1 inline-block">jquery</span>
+              <span className="tag tag-gray mr-1 inline-block">reactjs</span>
               <span className="tag tag-purple mr-1 inline-block">tailwind</span>
             </div>
           </div>
@@ -54,4 +51,5 @@ export default function () {
       </section>
     </>
   );
-}
+};
+export default porto;

@@ -4,7 +4,7 @@ import Header from './component/Header';
 import ImgProject from './component/ImgProject';
 import Link from 'next/link';
 
-export default function () {
+const blog = () => {
   return (
     <>
       <Header />
@@ -48,4 +48,5 @@ export default function () {
       </section>
     </>
   );
-}
+};
+export default blog;

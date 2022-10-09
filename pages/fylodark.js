@@ -4,11 +4,11 @@ import Header from './component/Header';
 import ImgProject from './component/ImgProject';
 import Link from 'next/link';
 
-export default function () {
+const fylodark = () => {
   return (
     <>
       <Header />
-      <ImgProject urlImg={'/assets/desktop-preview.jpg'} icon={'🎃'} key={dark} />
+      <ImgProject urlImg={'/assets/desktop-preview.jpg'} icon={'🎃'} key={'dark'} />
       <section className="contain my-20">
         <div className="w-full px-4 sm:px-28 ">
           <div className="flex flex-col sm:flex-row justify-between">
@@ -53,4 +53,6 @@ export default function () {
       </section>
     </>
   );
-}
+};
+
+export default fylodark;

@@ -4,7 +4,7 @@ import Header from './component/Header';
 import ImgProject from './component/ImgProject';
 import Link from 'next/link';
 
-export default function () {
+const weather = () => {
   return (
     <>
       <Header />
@@ -52,4 +52,5 @@ export default function () {
       </section>
     </>
   );
-}
+};
+export default weather;
