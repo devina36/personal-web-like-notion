@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function () {
+export default function About() {
   return (
     <section className="contain mb-28 mt-10">
       <div className="px-0 sm:px-12 lg:px-28">
