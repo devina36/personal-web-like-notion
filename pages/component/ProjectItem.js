@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ProjectItem({ title, img, url }) {
@@ -26,14 +25,7 @@ export default function ProjectItem({ title, img, url }) {
       >
         <div className="px-3 w-full h-full grid place-content-center text-center">
           <h3 className=" font-inter text-lg font-bold text-white">{title}</h3>
-          <Link href={url} scroll={true} passHref>
-            <a
-              className='className=" bg-[#F5EEFC] text-txt-orange font-bold block w-28 py-1 mx-auto rounded-lg mt-2 border-2
-            hover:border-2 hover:border-[#F5EEFC] hover:bg-transparent hover:text-[#F5EEFC] transition-colors ease-in-out duration-300"'
-            >
-              Show more
-            </a>
-          </Link>
+          {url}
         </div>
       </div>
     </div>
