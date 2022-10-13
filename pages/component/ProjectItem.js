@@ -16,7 +16,8 @@ export default function ProjectItem({ title, img, url }) {
           width={500}
           height={300}
           layout="responsive"
-          alt={'personal-web'}
+          alt={'web'}
+          priority
         />
       </div>
       <div
