@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
 
 export default function Imgproject({ urlImg, icon, title, desc, btn, tag }) {
+  const router = useRouter();
   return (
     <main className="contain">
       <div
@@ -35,14 +36,16 @@ export default function Imgproject({ urlImg, icon, title, desc, btn, tag }) {
               {tag}
             </div>
           </div>
-          <Link href="/" passhref>
-            <a className="text-theme flex items-center hover:text-accent hover:border-b-2 my-20 hover:border-accent w-fit group">
-              <span className="mr-2">
-                <BsArrowLeft />
-              </span>
-              <span>Back</span>
-            </a>
-          </Link>
+          <a
+            onClick={() => router.back()}
+            className="text-theme flex items-center hover:text-accent cursor-pointer
+            hover:border-b-2 mt-20 mb-10 hover:border-accent w-fit group"
+          >
+            <span className="mr-2">
+              <BsArrowLeft />
+            </span>
+            <span>Back</span>
+          </a>
         </div>
       </div>
     </main>

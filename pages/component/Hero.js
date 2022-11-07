@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
