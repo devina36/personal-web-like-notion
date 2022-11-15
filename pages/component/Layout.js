@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoad(true), 4000);
+    setLoad(true)
   }, []);
 
   return (
